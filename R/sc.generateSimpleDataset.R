@@ -1,13 +1,13 @@
-#' generateSimpleDataset
+#' sc.generateSimpleDataset
 #'
 #' Cette fonction génère un jeu de donnée simple
 #' @param n taille du jeu de données
 #' @keywords dataset generation
 #' @export
 #' @examples
-#' generateSimpleDataset(100)
+#' sc.generateSimpleDataset(100)
 
-generateSimpleDataset <- function(n) {
+sc.generateSimpleDataset <- function(n) {
     np <- ceiling(n/2)
     nn <- floor(n/2)
     pos <- mvrnorm(np,mu=c(0,0),Sigma=matrix(c(1,0.5,0.5,1),2,2))
