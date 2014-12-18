@@ -8,7 +8,7 @@
 #' sc.mediator.demo(sc.generateSimpleDataset(100))
 
 sc.mediator.demo <- function(d) {
-    plot.dataset(d)
+    sc.plot.dataset(d)
 
     c.pos <- t(colMeans(d[d$Y==1,c("V1","V2")]))
     c.neg <- t(colMeans(d[d$Y==-1,c("V1","V2")]))
