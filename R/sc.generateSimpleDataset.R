@@ -8,6 +8,7 @@
 #' sc.generateSimpleDataset(100)
 
 sc.generateSimpleDataset <- function(n) {
+	library(MASS)
     np <- ceiling(n/2)
     nn <- floor(n/2)
     pos <- mvrnorm(np,mu=c(0,0),Sigma=matrix(c(1,0.5,0.5,1),2,2))

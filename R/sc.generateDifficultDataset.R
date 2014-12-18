@@ -8,6 +8,7 @@
 #' sc.generateDifficultDataset(100)
 
 sc.generateDifficultDataset <- function(n) {
+	library(MASS)
     np <- ceiling(n/2)
     nn <- floor(n/2)
     pos <- mvrnorm(np,mu=c(0,0),Sigma=matrix(c(4,2,2,4),2,2))
